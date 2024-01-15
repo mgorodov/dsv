@@ -1,0 +1,11 @@
+*.a
+*.o
+*.so
+*.dll
+*.exe
+build
+
+#CLion
+.idea
+cmake-build-debug
+cmake-build-release
