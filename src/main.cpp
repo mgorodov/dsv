@@ -1,7 +1,6 @@
-#include "application.h"
+#include <application.h>
 
 int main() {
-    Application app;
-    app.run();
-    return 0;
+    dsv::Application app;
+    return app.run();
 }

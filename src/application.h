@@ -1,12 +1,23 @@
-#include <SFML/Graphics.hpp>
+#pragma once
+
+#include <controller/controller.h>
+#include <model/model.h>
+#include <ui/ui.h>
+#include <view/view.h>
+
+namespace dsv {
+
 class Application {
 public:
     Application();
-
-    void run();
-
+    int run();
     ~Application();
 
 private:
-    sf::RenderWindow window;
+    UI::UI ui;
+    Model model;
+    Controller controller;
+    View view;
 };
+
+}// namespace dsv
